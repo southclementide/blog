@@ -1,0 +1,13 @@
+baseURL = 'https://southclementide.github.io/blog/'
+title = "Lemonday's Documentation"
+
+[params]
+  BookComments = true
+
+# Required for mermaid and katex shortcodes
+[markup.goldmark.renderer]
+unsafe = true
+
+[module]
+  [[module.imports]]
+    path = 'github.com/alex-shpak/hugo-book'

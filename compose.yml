@@ -1,0 +1,14 @@
+services:
+  remark42:
+    image: umputun/remark42:latest
+    environment:
+      - REMARK_URL=http://localhost:8080
+      - SITE=myblog
+      - SECRET=local-dev-secret
+      - AUTH_ANON=true
+      - ADMIN_PASSWD=localadmin
+      - DEBUG=true
+    volumes:
+      - ./data:/srv/var:Z
+    ports:
+      - "8080:8080"
