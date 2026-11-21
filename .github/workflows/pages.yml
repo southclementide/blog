@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  HUGO_VERSION: 0.147.9
+  HUGO_VERSION: 0.170.1
 
 jobs:
   build:
